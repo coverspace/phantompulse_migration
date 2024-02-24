@@ -31,5 +31,5 @@ export default defineNuxtConfig({
       // in case of to share into the public
     },
   },
-  ssr: false,
+  ssr: true, // Should be true
 });
