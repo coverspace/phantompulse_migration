@@ -1,6 +1,6 @@
 site_url: http://localhost:3000
-# site_url: https://github.com/r4nd3l/Nuxt3Content_01
-logo_url: https://raw.githubusercontent.com/r4nd3l/Nuxt3Content_01/feature/netlify/public/img/myLogo.png
+# site_url: https://github.com/coverspace/phantompulse_migration
+logo_url: https://raw.githubusercontent.com/coverspace/phantompulse_migration/feature/netlify/public/img/myLogo.png
 
 # The search functionally requires loading all collection(s) entries,
 search: true
@@ -9,7 +9,7 @@ publish_mode: editorial_workflow
 backend:
   name: github
   # name: test-repo # in development mode(!)
-  repo: r4nd3l/Nuxt3Content_01
+  repo: coverspace/phantompulse_migration
   branch: feature/netlify
   squash_merges: true
 
