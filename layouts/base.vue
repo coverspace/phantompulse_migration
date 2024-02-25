@@ -20,3 +20,9 @@ const { data: navigation } = await useAsyncData("navigation", () => {
     </footer>
   </div>
 </template>
+
+<style lang="scss" scoped>
+div {
+  content: "";
+}
+</style>

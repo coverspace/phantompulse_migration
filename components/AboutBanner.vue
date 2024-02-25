@@ -6,12 +6,22 @@
       >
         <ContentDoc path="/about/banner" v-slot="{ doc }">
           <h1 class="text-center">{{ doc.title }}</h1>
-          <p class="text-center">
-            <ContentRenderer :value="doc" />
-          </p>
+          <p class="text-center"><ContentRenderer :value="doc" /></p>
           <button class="text-center">{{ doc.button }}</button>
         </ContentDoc>
       </div>
     </div>
   </div>
 </template>
+
+<script setup></script>
+
+<style lang="scss" scoped>
+main {
+  border: 1px solid green;
+
+  h1:nth-child(3) {
+    background: green;
+  }
+}
+</style>

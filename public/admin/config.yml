@@ -1,14 +1,20 @@
-site_url: http://localhost:3000 # in-admin link to reach the site
-# site_url: https://github.com/coverspace/Netlify_Nuxt3_Decap
-logo_url: https://raw.githubusercontent.com/coverspace/Netlify_Nuxt3_Decap/main/public/img/coverspace.png
+site_url: http://localhost:3000
+# site_url: https://github.com/r4nd3l/Nuxt3Content_01
+logo_url: https://raw.githubusercontent.com/r4nd3l/Nuxt3Content_01/feature/netlify/public/img/myLogo.png
+
+# The search functionally requires loading all collection(s) entries,
+search: true
 
 publish_mode: editorial_workflow
 backend:
-  name: test-repo
-  # name: git-gateway
-  repo: coverspace/Netlify_Nuxt3_Decap
-  branch: main # Branch to update (optional; defaults to master)
+  name: github
+  # name: test-repo # in development mode(!)
+  repo: r4nd3l/Nuxt3Content_01
+  branch: feature/netlify
   squash_merges: true
+
+# used together with `npx netlify-cms-proxy-server`. https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
+local_backend: true
 
 media_folder: "/assets/images"
 public_folder: "/public/img"

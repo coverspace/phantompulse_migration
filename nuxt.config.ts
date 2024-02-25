@@ -3,8 +3,8 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
   app: {
     head: {
-      title: "Nuxt3_Decap",
-      meta: [{ name: "description", content: "Nuxt3_Decap" }],
+      title: "Nuxt3.2.2",
+      meta: [{ name: "description", content: "Nuxt3.2.2" }],
       link: [
         {
           rel: "stylesheet",
@@ -31,5 +31,5 @@ export default defineNuxtConfig({
       // in case of to share into the public
     },
   },
-  ssr: true, // Should be true
+  ssr: true,
 });

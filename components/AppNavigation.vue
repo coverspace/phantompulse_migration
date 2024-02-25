@@ -1,30 +1,30 @@
 <template>
   <div class="grid grid-col-12">
     <div class="col-span-12">
-      <ContentNavigation v-slot="{ navigation }">
-        <ul
-          class="flex flex-row justify-start items-center gap-4 shadow w-full p-4"
-        >
-          <li v-for="link in navigation" :key="link._path">
-            <NuxtLink :to="link._path === '/main' ? '/' : link._path">{{
-              link.title
-            }}</NuxtLink>
+      <div class="flex flex-row justify-start items-center border border-red-500">
+        <ul class="flex flex-row justify-start items-center gap-4 shadow w-full p-4">
+          <li v-for="(item, index) in navigationTree" :key="index">
+            <NuxtLink :to="item._path === '/main' ? '/' : item._path">
+              {{ item.title }}
+            </NuxtLink>
           </li>
         </ul>
-      </ContentNavigation>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   navigationTree: {
     type: Array,
     default: () => [],
   },
 });
-
-// onMounted(() => {
-//   console.log("AppNavigation - navigationTree", props.navigationTree);
-// });
 </script>
+
+<style lang="scss" scoped>
+div {
+  content: "";
+}
+</style>
