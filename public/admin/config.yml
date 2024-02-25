@@ -10,7 +10,7 @@ backend:
   name: github
   # name: test-repo # in development mode(!)
   repo: coverspace/phantompulse_migration
-  branch: feature/netlify
+  branch: main
   squash_merges: true
 
 # used together with `npx netlify-cms-proxy-server`. https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
